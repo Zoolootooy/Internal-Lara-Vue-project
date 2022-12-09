@@ -1,0 +1,1 @@
+<script src="{{ URL::asset('js/frontend.js') }}" defer></script>

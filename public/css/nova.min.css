@@ -1,0 +1,44 @@
+/* Page top padding */
+
+.px-view.py-view {
+  padding-top: 1.5rem;
+}
+
+/* Edit field paddings */
+
+.border-b .py-6 {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+/* Nova Big Filter */
+
+.flex-wrap .border-b {
+  display: none;
+  border: 0px;
+  /* transparent filter border */
+  background: none;
+  /* transparent filter border */
+}
+
+.nova-big-filter-col {
+  width: 20% !important;
+}
+
+.nova-big-filter-col .p-3 {
+  padding-bottom: 0px;
+  background: none;
+  /* transparent filter border */
+  padding: 0 0.61rem 0.4rem 0.14rem;
+  /* transparent filter border */
+}
+
+.nova-big-filter-col .p-2 {
+  padding-bottom: 0px;
+  /* transparent filter border */
+  background: none;
+  /* transparent filter border */
+  padding: 0 0.61rem 0 0.14rem;
+  /* transparent filter border */
+}
+

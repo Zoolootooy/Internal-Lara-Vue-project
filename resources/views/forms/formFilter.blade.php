@@ -1,0 +1,1 @@
+{!! Form::open(array_merge($options, FormHelper::formFilterOptions($options))) !!}

@@ -1,0 +1,74 @@
+// 
+// _table.scss
+//
+
+.table {
+  th {
+    font-weight: $font-weight-bold;
+  }
+}
+
+//Table centered
+.table-centered {
+  td, th {
+    vertical-align: middle !important;
+  }
+}
+
+.table-nowrap {
+  th, td {
+    white-space: nowrap;
+  }
+}
+
+//
+// table-wrapper
+//
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table-wrapper {
+  .table {
+    th, td {
+      display: block;
+    }
+    th.secondary, td.secondary {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .table {
+    th:empty, td:empty {
+      display: none;
+    }
+    /*td:empty::after {
+      content: '-';
+      color: $gray-600;
+    }*/
+  }
+}
+
+@media (min-width: 768px) {
+  .table-wrapper {
+    .table {
+      th, td {
+        display: table-cell;
+        max-width: 500px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .table-wrapper {
+    .table {
+      th.secondary, td.secondary {
+        display: table-cell;
+      }
+    }
+  }
+}

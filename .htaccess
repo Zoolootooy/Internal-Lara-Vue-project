@@ -1,0 +1,22 @@
+# prevent directory listings
+Options -Indexes
+# follow symbolic links
+Options FollowSymlinks
+RewriteEngine on
+
+# 1
+#RewriteCond %{REQUEST_URI} ^.*$
+#RewriteRule ^(.*)$ /public/$1
+
+# 2
+#RewriteCond %{REQUEST_URI} /nova/dashboards
+#RewriteRule ^(.*)$ /public/$1
+
+#RewriteRule ^nova(/.*)?$  %{SERVER_URI}nova/dashboards
+#RewriteCond %{REQUEST_URI} !/nova/dashboards [NC]
+#RewriteRule ^(.*)$ /public/$1
+
+RewriteRule ^nova(/.*)?$  %{SERVER_URI}nova/dashboards
+
+RewriteCond %{REQUEST_URI} ^.*$
+RewriteRule ^(.*)$ /public/$1
